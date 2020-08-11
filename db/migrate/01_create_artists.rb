@@ -16,6 +16,9 @@ class CreateArtists < ActiveRecord::Migration[5.2]
       )
     SQL
 
+    ActiveRecord::Base.connection.execute(sql)
+
+
   end
 
 end
